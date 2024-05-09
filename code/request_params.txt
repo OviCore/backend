@@ -1,0 +1,58 @@
+type TestResult = {
+  Result: string;
+  NormalRange?: string;
+  Note: string;
+};
+
+type CompleteBloodCount = {
+  WhiteBloodCellCount: TestResult;
+  RedBloodCellCount: TestResult;
+  Hemoglobin: TestResult;
+  Hematocrit: TestResult;
+  MeanCorpuscularVolume: TestResult;
+  MeanCorpuscularHemoglobin: TestResult;
+  MeanCorpuscularHemoglobinConcentration: TestResult;
+  PlateletCount: TestResult;
+};
+
+type BasicMetabolicPanel = {
+  Sodium: TestResult;
+  Potassium: TestResult;
+  Chloride: TestResult;
+  Bicarbonate: TestResult;
+  BloodUreaNitrogen: TestResult;
+  Creatinine: TestResult;
+  Glucose: TestResult;
+  Calcium: TestResult;
+};
+
+type LiverFunctionTests = {
+  TotalBilirubin: TestResult;
+  DirectBilirubin: TestResult;
+  IndirectBilirubin: TestResult;
+  AlanineAminotransferase: TestResult;
+  AspartateAminotransferase: TestResult;
+  AlkalinePhosphatase: TestResult;
+  TotalProtein: TestResult;
+  Albumin: TestResult;
+  Globulin: TestResult;
+};
+
+type Breakdown = {
+  CompleteBloodCount: CompleteBloodCount;
+  BasicMetabolicPanel: BasicMetabolicPanel;
+  LiverFunctionTests: LiverFunctionTests;
+};
+
+type HealthReport = {
+  Breakdown: Breakdown;
+  Prognosis: string;
+  Recommendations: string;
+};
+
+
+
+This is an example response: 
+Wrap each section with a card component.
+
+

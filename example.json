@@ -1,0 +1,137 @@
+{
+    "Breakdown": {
+      "CompleteBloodCount": {
+        "WhiteBloodCellCount": {
+          "Result": "7.2 x 10^3/μL",
+          "NormalRange": "4.5-11.0 x 10^3/μL",
+          "Note": "Within normal range, indicating normal immune function."
+        },
+        "RedBloodCellCount": {
+          "Result": "5.0 x 10^6/μL",
+          "NormalRange": "4.5-6.0 x 10^6/μL",
+          "Note": "Within normal range, indicating normal oxygen transport."
+        },
+        "Hemoglobin": {
+          "Result": "15.5 g/dL",
+          "NormalRange": "13.5-17.5 g/dL",
+          "Note": "Within normal range, indicating normal oxygen-carrying capacity."
+        },
+        "Hematocrit": {
+          "Result": "45%",
+          "NormalRange": "41-53%",
+          "Note": "Within normal range, indicating normal blood volume."
+        },
+        "MeanCorpuscularVolume": {
+          "Result": "90 fL",
+          "NormalRange": "80-100 fL",
+          "Note": "Within normal range, indicating normal size of red blood cells."
+        },
+        "MeanCorpuscularHemoglobin": {
+          "Result": "30 pg",
+          "NormalRange": "27-33 pg",
+          "Note": "Within normal range, indicating normal amount of hemoglobin per red blood cell."
+        },
+        "MeanCorpuscularHemoglobinConcentration": {
+          "Result": "33 g/dL",
+          "NormalRange": "32-36 g/dL",
+          "Note": "Within normal range, indicating normal concentration of hemoglobin in red blood cells."
+        },
+        "PlateletCount": {
+          "Result": "250 x 10^3/μL",
+          "NormalRange": "150-400 x 10^3/μL",
+          "Note": "Within normal range, indicating normal blood clotting function."
+        }
+      },
+      "BasicMetabolicPanel": {
+        "Sodium": {
+          "Result": "140 mmol/L",
+          "NormalRange": "135-145 mmol/L",
+          "Note": "Within normal range, indicating normal electrolyte balance."
+        },
+        "Potassium": {
+          "Result": "4.2 mmol/L",
+          "NormalRange": "3.5-5.1 mmol/L",
+          "Note": "Within normal range, indicating normal muscle and nerve function."
+        },
+        "Chloride": {
+          "Result": "100 mmol/L",
+          "NormalRange": "98-107 mmol/L",
+          "Note": "Within normal range, indicating normal electrolyte balance."
+        },
+        "Bicarbonate": {
+          "Result": "25 mmol/L",
+          "NormalRange": "22-29 mmol/L",
+          "Note": "Within normal range, indicating normal pH balance."
+        },
+        "BloodUreaNitrogen": {
+          "Result": "10 mg/dL",
+          "NormalRange": "7-20 mg/dL",
+          "Note": "Within normal range, indicating normal kidney function."
+        },
+        "Creatinine": {
+          "Result": "0.9 mg/dL",
+          "NormalRange": "0.6-1.3 mg/dL",
+          "Note": "Within normal range, indicating normal kidney function."
+        },
+        "Glucose": {
+          "Result": "90 mg/dL",
+          "NormalRange": "70-100 mg/dL",
+          "Note": "Within normal range, indicating normal blood sugar level."
+        },
+        "Calcium": {
+          "Result": "9.5 mg/dL",
+          "NormalRange": "8.6-10.3 mg/dL",
+          "Note": "Within normal range, indicating normal bone and nerve function."
+        }
+      },
+      "LiverFunctionTests": {
+        "TotalBilirubin": {
+          "Result": "0.8 mg/dL",
+          "NormalRange": "0.2-1.2 mg/dL",
+          "Note": "Within normal range, indicating normal liver function and bile production."
+        },
+        "DirectBilirubin": {
+          "Result": "0.2 mg/dL",
+          "NormalRange": "0.0-0.3 mg/dL",
+          "Note": "Within normal range, indicating normal liver function and bile production."
+        },
+        "IndirectBilirubin": {
+          "Result": "0.6 mg/dL",
+          "Note": "Within normal range, indicating normal liver function and bile production."
+        },
+        "AlanineAminotransferase": {
+          "Result": "20 U/L",
+          "NormalRange": "10-40 U/L",
+          "Note": "Within normal range, indicating normal liver function."
+        },
+        "AspartateAminotransferase": {
+          "Result": "25 U/L",
+          "NormalRange": "10-40 U/L",
+          "Note": "Within normal range, indicating normal liver function."
+        },
+        "AlkalinePhosphatase": {
+          "Result": "70 U/L",
+          "NormalRange": "44-147 U/L",
+          "Note": "Within normal range, indicating normal liver and bone function."
+        },
+        "TotalProtein": {
+          "Result": "7.0 g/dL",
+          "NormalRange": "6.0-8.3 g/dL",
+          "Note": "Within normal range, indicating normal liver function and protein production."
+        },
+        "Albumin": {
+          "Result": "4.0 g/dL",
+          "NormalRange": "3.5-5.0 g/dL",
+          "Note": "Within normal range, indicating normal liver function and protein production."
+        },
+        "Globulin": {
+          "Result": "3.0 g/dL",
+          "NormalRange": "2.0-4.5 g/dL",
+          "Note": "Within normal range, indicating normal liver function and protein production."
+        }
+      }
+    },
+    "Prognosis": "Based on the normal results, John appears to be in good health with no indications of underlying medical conditions based on this blood work.",
+    "Recommendations": "Routine check-ups every 1-2 years with a primary care physician are recommended for overall health monitoring and preventive care. If John has any ongoing health concerns or symptoms, he should schedule an appointment with his healthcare provider for further evaluation and guidance."
+  }
+  
