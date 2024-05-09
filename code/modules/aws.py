@@ -1,10 +1,12 @@
 from flask import Flask, request
+from fastapi import APIRouter
 from werkzeug.utils import secure_filename
 import boto3
 import io
 
 app = Flask(__name__)
 s3 = boto3.client('s3')
+router = APIRouter()
 
 def upload_image_to_s3(file):
     if file:
@@ -19,4 +21,17 @@ def upload_image_to_s3(file):
         return 'File uploaded successfully to S3', 200
     else:
         return 'No selected file', 400
-    
+
+@router.get("/status/")
+async def health():
+    # Check if aws is working
+    s3.list_buckets()
+    return {"status": "ok"}
+
+@router.post("/upload_image/")
+async def upload_image():
+    file = request.files['file']
+    return upload_image_to_s3(file)
+
+def add_aws(app):
+    app.include_router(router, prefix="/aws", tags=["aws"])

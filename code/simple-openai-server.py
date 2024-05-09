@@ -14,7 +14,6 @@ from modules.load_env import load_apikey_env
 from modules.apis_response_format import Health, Get_openai_text, Get_openai_text_file
 from modules.apis_payload_format import Openai_simple_text, Openai_simple_prompt, Openai_question
 from modules.html_converter import html_to_text
-from modules.image_upload import upload_image_to_s3
 
 # - AI
 from modules.openai_access import get_simple_text, get_text_with_prompt
@@ -22,6 +21,8 @@ from modules.openai_access import get_simple_text, get_text_with_prompt
 from typing import Any
 
 from modules.mongo_operations import add_user_routes
+from modules.aws import add_aws
+from modules.firebase import add_firebase
 
 ##################################
 # Set basic auth as security
@@ -58,8 +59,10 @@ client = create_mongo_client()
 db = get_database(client, "openai")
 collection = get_collection(db, "users")
 
-add_user_routes(app, "openai", "users")
 ##################################
+add_user_routes(app, "openai", "users")
+add_aws(app)
+add_firebase(app)
 # Endpoints
 @app.get("/")
 def root_show_configuration_status():
@@ -167,13 +170,6 @@ async def get_openai_file_with_prompt(   file: Annotated[UploadFile, File(descri
         print(f"***DEBUG: else (get_openai_text): {result}: {validation}")
         return { "text": result , "validation":  {"status" : str(validation["status"])}}
     
-@app.post("/upload_image_to_s3/")
-async def upload_image_to_s3_endpoint(file: UploadFile = File(...)) -> Any:
-    """
-    This endpoint uploads an image file to S3.
-    """
-    message, status = upload_image_to_s3(file)
-    return { "status": status, "message": message }
 
 @app.get("/test_mongodb")
 async def test_mongodb():
